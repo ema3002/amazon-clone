@@ -1,0 +1,445 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: Arial;
+   box-sizing: border-box;
+   max-width: 100%;
+   overflow-x: hidden;
+   overflow-y: auto;
+   /* position: relative; */
+
+}
+ body{
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-position: center;
+    
+    transition: none;
+}
+
+.navbar {
+   height: 60px;
+   background-color: #0F1111;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+
+
+}
+
+.nav_logo {
+   height: 43px;
+   width: 114px;
+}
+
+.border {
+
+   border: 1.5px solid transparent;
+}
+
+.border:hover {
+   border: 1.5px solid white;
+
+}
+
+.logo {
+   background-image: url(image_logo.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   /* transition: left 2.5s, right 0.5s; */
+   height: 42px;
+   width: 100%;
+}
+
+.nav_address {
+   height: 40px;
+   width: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 15px;
+   padding:  5px;
+}
+
+.add_1st {
+
+   color: #cccccc;
+   font-size: 0.8rem;
+   margin-left: 20px;
+   margin-top: 0;
+}
+
+.add_2nd {
+   font-size: 1rem;
+   font-weight: 700;
+   margin-top: 0;
+
+}
+
+.add_icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.add_icon i{
+   font-size: 1rem;
+   margin-right: 3px;
+}
+
+.nav_address{
+    display: flex;
+}
+.nav_search {
+   display: flex;
+   background-color: #1F1111;
+   /* padding: 10px 4px 10px 3px; */
+   height: 40px;
+   max-width:620px ;
+   /* border-radius: 4px; */
+   justify-content: space-evenly;
+
+}
+
+.nav_search:hover {
+   border: 2px solid orange;
+}
+
+.search_select {
+   background-color: #f3f3f3;
+   border-radius: left 4;
+   width: 50px;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+   border: none
+}
+
+.search_input {
+
+   width: 100%;
+   font-size: 1rem;
+   border: none;
+
+}
+
+.search_icon {
+   width: 45px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2 rem;
+   background-color: rgb(220, 136, 33);
+   border-top-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+}
+
+/* box4 */
+.nav_signin {
+   height: 43px;
+   width: 114px;
+   align-items: center;
+}
+.nav_signin p,.nav_return p{
+margin: 0;
+line-height: 1.2;
+}
+
+span {
+   font-size: 0.7rem;
+}
+
+.nav_2nd {
+   font-size: 0.85rem;
+   font-weight: 700;
+}
+
+/* box5 */
+.nav_return {
+   height: 43px;
+   width: 60px;
+   align-items: center;
+}
+
+/* box 6 */
+.nav_cart {
+   height: 43px;
+   width: 70px;
+}
+
+.nav_cart {
+   font-size: 0.85rem;
+}
+
+.nav_cart i {
+   font-size: 30px;
+   font-weight: 700;
+
+}
+
+/* panel */
+.panel {
+   height: 40px;
+   background-color: #222f3d;
+   display: flex;
+   color: white;
+   align-items: center;
+   justify-content: space-evenly;
+
+}
+
+.panel_ops p {
+   display: inline;
+   margin-left: 15px;
+   color: white;
+   white-space: nowrap;
+}
+
+.panel_ops {
+   width: 70%;
+   font-size: 0.85rem;
+}
+
+.panel_deals {
+   font-size: 0.9rem;
+   font-weight: 700;
+}
+/* hero section  */
+.hero_section{
+   background-image: url(image_hero.jpg);
+   background-size: cover;
+   height: 400px;
+   display: flex;
+}
+/* .box{
+   width: 23%;
+   height: 500px;
+   background-color: white;
+   margin-top: 15px;
+  
+}
+.shop_section{
+   display: flex;
+   justify-content: space-evenly;
+   background-color: #e2e7e6;
+}
+.box_img{
+height: 200px;
+background-image: cover;
+background-repeat: no-repeat;
+margin-top: 1rrem;
+margin-bottom: 1rem;
+
+}
+.box_content{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.box_content p{
+   background-color:#007185 ;
+}
+.box_subcontent{
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+}
+.item{
+   height: 20px;
+background-image: cover;
+background-repeat: no-repeat;
+margin-top: 1rrem;
+margin-bottom: 1rem;;
+} */
+/* কার্ডের মেইন কন্টেইনার */
+/* 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e3e6e6; /* Amazon এর ব্যাকগ্রাউন্ড কালার */
+    /* font-family: Arial, sans-serif; */
+
+/* মেইন কন্টেইনার */
+.shop-section {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* কমন কার্ড স্টাইল */
+.box {
+    height: 420px;
+    width: 23%; /* ৪টি কার্ডের জন্য */
+    background-color: white;
+    padding: 10px 0px 15px;
+    min-width: 300px;
+}
+
+.box-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+/* বড় ইমেজ এর জন্য */
+.main-img, .single-img-full {
+    height: 200px;
+    background-size: cover;
+    margin-bottom: 8px;
+}
+
+.single-img-full {
+    height: 280px; /* গেমিং কার্ডের জন্য বড় ইমেজ */
+}
+
+/* নিচের ৩টি বা ৪টি ইমেজের লেআউট */
+.sub-images, .grid-4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sub-box, .grid-item {
+    flex: 1;
+    min-width: 80px;
+}
+
+.sub-box img, .grid-item img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+
+.grid-item {
+    width: 45%; /* ২x২ গ্রিড এর জন্য */
+}
+
+p {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #111;
+}
+
+a {
+    font-size: 13px;
+    color: #007185;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+a:hover {
+    color: #C7511F;
+    text-decoration: underline;
+}
+
+
+/* ২ ও ৪ নম্বর কার্ডের ইমেজের জন্য গ্রিড লেআউট */
+.grid-4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.grid-item {
+    width: 45%; /* প্রতি লাইনে ২টি করে ইমেজ দেখাবে */
+    margin-bottom: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100px; /* উচ্চতা ফিক্সড করে দিন যাতে সমান দেখায় */
+    object-fit: cover;
+}
+
+.grid-item p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.footer{
+   margin-top: 15px;
+}
+.foot_panel1{
+   background-color: #37475a;
+   color: white;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.85rem;
+}
+.foot_panel2{
+   background-color: #222f3d;
+   color:white;
+   height: 300px;
+   display: flex;
+   justify-content: space-evenly;
+   
+}
+ui{
+   margin-top: 20px;
+}
+ul a{
+   display: block;
+   font-size: 0.85rem;
+   margin-top: 10px;
+   color: #dddddd;
+}
+p{
+   color: white;
+   font-size: 18px;
+   font-weight: bold;
+   margin-top: 50px;
+}
+.foot_panel3{
+   background-color: #222f3d;
+   color: white;
+   border-top: 1px solid white;
+   height: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.logo{
+    background-image: url(image_logo.png);
+   /* background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat; */
+   /* transition: left 2.5s, right 0.5s; */
+   height: 42px;
+   width: 100px;
+}
+.foot_panel4{
+   background-color: #0F1111;
+   font: white;
+   height: 100px;
+   text-align: center;
+   font-size: 0.7 rem;
+
+   /* display: flex;
+   justify-content: center; */
+}
+.pages{
+   
+   padding: 25px;
+}
+.copyright{
+   
+   
+   padding: 5px;
+
+}
